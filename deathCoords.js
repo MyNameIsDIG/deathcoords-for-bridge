@@ -19,6 +19,6 @@ bridge.events.playerDieLog.subscribe((e, player) => {
 	// In-game
 	player.sendMessage(`You died in ${dimension !== 'end' ? `the ${dimension}` : dimension} at ${x}, ${y}, ${z}`);
 
-	// Discord
+	// If you don't want the coordinates to be sent to Discord, you may comment out the line below:
 	e.message += ` in ${dimension !== 'end' ? `the ${dimension}` : dimension} at ${x}, ${y}, ${z}`;
 });
